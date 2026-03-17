@@ -1,0 +1,12 @@
+notes() {
+  local action="${1:-}"
+  shift || true
+
+  case "$action" in
+    push)
+      cd ~/notes
+      git commit -am 'Updated the notes'
+      git push --force
+      ;;
+  esac
+}
