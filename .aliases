@@ -1,0 +1,1 @@
+alias csf='dotnet csharpier format .'
