@@ -1,3 +1,8 @@
 alias gf='git fetch --prune && git pull'
 alias gp='git push'
 alias gpull='git pull'
+
+checkout-branch() {
+  read -p "Enter branch name: " branch_name
+  git checkout -b "$branch_name"
+}
